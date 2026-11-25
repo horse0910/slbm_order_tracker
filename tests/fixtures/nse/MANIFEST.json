@@ -1,0 +1,56 @@
+{
+  "live_analysis_slb_symbol_IRFC.json": {
+    "url": "https://www.nseindia.com/api/live-analysis-slb",
+    "params": {
+      "symbol": "IRFC"
+    },
+    "captured_at_ist": "2026-10-04T14:23:38+05:30"
+  },
+  "getquote_slbm_IRFC.json": {
+    "url": "https://www.nseindia.com/api/NextApi/apiClient/GetQuoteApi",
+    "params": {
+      "functionName": "getGetQuoteSLBMData",
+      "symbol": "IRFC",
+      "series": "",
+      "month": ""
+    },
+    "captured_at_ist": "2026-10-04T14:23:40+05:30"
+  },
+  "slb_history_IRFC.json": {
+    "url": "https://www.nseindia.com/api/NextApi/apiClient/GetQuoteApi",
+    "params": {
+      "functionName": "getSLBHistoricalData",
+      "symbol": "IRFC",
+      "fromDate": "04-09-2026",
+      "toDate": "04-10-2026",
+      "csv": "false"
+    },
+    "captured_at_ist": "2026-10-04T14:23:42+05:30"
+  },
+  "series_master.json": {
+    "url": "https://www.nseindia.com/api/live-analysis-slb-series-master",
+    "params": null,
+    "captured_at_ist": "2026-10-04T14:23:44+05:30"
+  },
+  "getquote_slbm_IRFC_t0_synthetic.json": {
+    "synthetic": true,
+    "derived_from": "getquote_slbm_IRFC.json",
+    "changes": {
+      "series XN": {
+        "totTradedQty": 1000
+      }
+    },
+    "purpose": "Trade-event tests (2.13) until a real market-hours capture exists. Not NSE data as received."
+  },
+  "getquote_slbm_IRFC_t1_synthetic.json": {
+    "synthetic": true,
+    "derived_from": "getquote_slbm_IRFC.json",
+    "changes": {
+      "series XN": {
+        "totTradedQty": 1500,
+        "lastPrice": 0.33
+      }
+    },
+    "purpose": "Trade-event tests (2.13) until a real market-hours capture exists. Not NSE data as received."
+  }
+}
